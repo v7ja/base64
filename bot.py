@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import base64
 
-token = "6566439627:AAGalC-dwMC6tnjAErZpL3NbHugQzxdszcs"
+token = "6566439627:AAFa9R9GPZrRHa8PDz4zS4Usc8-z4mPa8Vg"
 bot = telebot.TeleBot(token)
 
 
@@ -34,5 +34,5 @@ def de_text(message):
  decode = base64.b64decode(message.text).decode("UTF-8")
  bot.reply_to(message,f'*تم فك تشفير النص*\n\n( {decode} )',parse_mode="markdown")
  
-
+print('Done')
 bot.polling()
